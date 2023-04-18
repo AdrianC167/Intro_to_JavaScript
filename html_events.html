@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    
+<h1>hbdsjnfd</h1>
+<p id="myPar">afdsf</p>
+<button onclick="changeStyle()">Click Me</button>
+<hr>
+<button onclick="addNum()" id="counterid">0</button>
+<hr>
+<input id="my_input">
+<button id="input_button" onclick="inputButton()">Click Me</button>
+<hr>
+<p>Enter the Password</p>
+<input id="secret_input">  
+<button id="secret_button" onclick="secretLink()">click me not</button>
+
+
+    <script lang="js">
+        console.log('hello world')
+        document.write('<h1>I dont like things</h1>')
+        document.write('I dont like things')
+
+        function changeStyle () {
+        let myPara = document.getElementById("myPar")
+        myPara.innerHTML = "this was modified by javascript"
+        myPara.style = "background: red; color: cyan"
+        }
+
+        let counter = 0
+        function addNum () {
+            counter = counter + 1
+        let addNum = document.getElementById("counterid")
+        addNum.innerHTML = counter
+        alert('You should take a break')
+        }
+
+        function inputButton () {
+            let myInput = document.getElementById("input_button")
+            console.log(myInput.value)
+
+
+        }
+        
+
+        function secretLink () {
+            let password = 1234
+            let guess = document.getElementById("secret_input")   
+            if (guess.value == password) {
+                window.location = "https://reddit.com"
+            } else {
+                alert("incorrect, try again")
+            }
+         } 
+    </script>
+</body>
+</html>
