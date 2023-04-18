@@ -14,6 +14,8 @@ console.log("You have a D")
 console.log("You failed with a F")
 } else if (grade <=0) {
 console.log("You should just expell yourself...")
+} else {
+console.log("Please only enter a number with no characters or symbols")
 }
 
 
