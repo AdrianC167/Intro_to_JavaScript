@@ -102,7 +102,7 @@ turtle.closePath()
 turtle.left(90)
 
 turtle.beginPath()
-for (let i = 0; i < 60; i++) {
+for (let i = 0; i < 20; i++) {
     turtle.forward(4)
     turtle.right(180)
     turtle.forward(4)
@@ -111,3 +111,22 @@ for (let i = 0; i < 60; i++) {
     turtle.right(90)
 }
 
+turtle.closePath
+
+turtle.left(90)
+turtle.forward(77)
+turtle.right(90)
+
+turtle.beginPath()
+for (let i = 0; i < 18; i++) {
+    turtle.forward(4)
+    turtle.right(180)
+    turtle.forward(4)
+    turtle.right(90)
+    turtle.forward(3)
+    turtle.right(90)
+}
+
+turtle.closePath
+
+turtle.setPosition(999, 999)
