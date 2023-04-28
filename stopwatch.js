@@ -1,17 +1,17 @@
 function startCount () {
-    alert("worked")
+    alert("hey you clicked on the start button")
 
 
 }
 
 function endCount () {
-    alert("worked")
+    alert("hey you clicked on the stop button")
 
 
 }
 
 function resetCount () {
-    alert("worked")
+    alert("hey you clicked on the reset button")
 
 
 }
