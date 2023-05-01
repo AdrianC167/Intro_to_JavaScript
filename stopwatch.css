@@ -1,9 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Darumadrop+One&family=Nunito&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Castoro+Titling&display=swap');
+
 button {
 
+border-color: rgba(168, 167, 165, 0.384);
 background-color: #4af7d8ba;
-height: 24px;
-width: 55px;
-border-radius: 14%;
+height: 30px;
+width: 75px;
+border-radius: 11%;
+font-family: 'Castoro Titling', cursive;
+
+}
+
+button:hover{
+
+
+background-color: darkgrey;
+
+}
+
+
+button:active {
+
+background-color: mediumpurple;
 
 
 }
+
+body {
+
+background-color: azure;
+
+
+
+}
+
+h1 {
+    
+    font-family: 'Castoro Titling', cursive;
+
+}
+
+h2 {
+
+    font-size: 30px;
+    height: 50px;
+    margin-left: 105px;
+    margin-right: 105px;
+    background-color: rgba(0, 0, 0, 0.114);
+    font-family: 'Darumadrop One', cursive;
+
+}
+
