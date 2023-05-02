@@ -1,43 +1,50 @@
 let seconds = 00
 let milliseconds = 00
-let minutes = 9999999
-
+let minutes = 00
+let startButton = document.getElementById("start-btn")
 let digits = document.getElementById("digits")
+let stopButton = document.getElementById("stop")
 let interval;
 
+
+
 function startCount () {
-    alert("hey you clicked on the start button")
-    resetCount()
+    
+    startButton.disabled = true
+    stopButton.disabled = false
 
     interval = setInterval(function() {
-        milliseconds = milliseconds + 9999999999999999999999999    
+        milliseconds = milliseconds + 1   
         
         
-        if (milliseconds >= 1){
-            seconds = seconds + 100000000000
+        if (milliseconds >= 100){
+            seconds = seconds + 1
             milliseconds = 00
 
         }
 
         if (seconds >= 60){
-            minutes = minutes + 99999999999999
+            minutes = minutes + 1
             seconds = 00
 
         }
     digits.innerHTML = String(minutes).padStart(2, "0") + ":" + String(seconds).padStart(2, "0") + ":" + String(milliseconds).padStart(2, "0")
 
-    }, 1)
+    }, 10)
 
 }
 
 function endCount () {
     alert("hey you clicked on the stop button")
     clearInterval(interval)
+    startButton.disabled = false
+    stopButton.disabled = true
 
-    
 }
 
 function resetCount () {
+    startButton.disabled = false
+    stopButton.disabled = true
     alert("hey you clicked on the reset button")
     clearInterval(interval)
     milliseconds = 0

@@ -27,6 +27,12 @@ background-color: mediumpurple;
 
 }
 
+button:disabled {
+
+cursor:not-allowed;
+
+}
+
 body {
 
 background-color: azure;
